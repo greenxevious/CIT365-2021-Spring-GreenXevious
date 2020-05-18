@@ -60,25 +60,21 @@ namespace MegaDesk_xeviousgreen
 
         }
 
-
-
-        public void TotalCalc_Click(object sender, EventArgs e)
+        public void Clickclick()
         {
-
-
 
             surfaceArea = width * depth;
 
             width = widthDown.Value;
 
-             depth = depthDown.Value;
+            depth = depthDown.Value;
 
-             drawers = drawsDown.Value;
+            drawers = drawsDown.Value;
 
-             time = timeDown.Value;
-           
+            time = timeDown.Value;
 
-       if(time == '3')
+
+            if (time == '3')
             {
 
                 if (surfaceArea <= 1000)
@@ -88,7 +84,7 @@ namespace MegaDesk_xeviousgreen
                 if (surfaceArea >= 2000)
                 { deliveryPrice = 80; }
             }
-       else if( time == '5')
+            else if (time == '5')
             {
 
                 if (surfaceArea <= 1000)
@@ -109,17 +105,17 @@ namespace MegaDesk_xeviousgreen
                 { deliveryPrice = 40; }
             }
 
-                else 
-                {
-                    deliveryPrice = 0;
-                }
+            else
+            {
+                deliveryPrice = 0;
+            }
 
 
 
 
             material = matDown.Value;
 
-            if(material == '1')
+            if (material == '1')
             { materialPrice = 200; }
 
             if (material == '2')
@@ -136,7 +132,18 @@ namespace MegaDesk_xeviousgreen
 
             decimal totalAmount = surfaceArea + deliveryPrice + (drawers * 50) + materialPrice;
 
-             decimal amount = totalAmount;
+            decimal amount = totalAmount;
+           
+            MessageBox.Show(amount + "This is your estimate.");
+
+        }
+
+        public void TotalCalc_Click(object sender, EventArgs e)
+        {
+            Clickclick();
+
+
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -159,9 +166,10 @@ namespace MegaDesk_xeviousgreen
 
         private void timeDown_ValueChanged(object sender, EventArgs e)
         {
+            
             if (time != 3 || time != 5 || time != 7 || time != 14)
-                { timeDown.BackColor = Color.Red; }
-            else { timeDown.BackColor = Color.White; }
+                { MessageBox.Show("Please choose 3, 5, 7,or 14"); }
+         
 
         }
     }

@@ -262,5 +262,10 @@ namespace timemath
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
             dateTimePicker1.CustomFormat = "dd-MM-yyyy";
         }
+
+        private void sum_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

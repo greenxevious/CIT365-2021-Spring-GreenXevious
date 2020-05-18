@@ -235,6 +235,7 @@
             this.sum.Name = "sum";
             this.sum.Size = new System.Drawing.Size(120, 20);
             this.sum.TabIndex = 2;
+            this.sum.ValueChanged += new System.EventHandler(this.sum_ValueChanged);
             this.sum.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // label16

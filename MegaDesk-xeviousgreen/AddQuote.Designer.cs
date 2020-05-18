@@ -149,7 +149,6 @@
             this.drawsDown.Name = "drawsDown";
             this.drawsDown.Size = new System.Drawing.Size(120, 20);
             this.drawsDown.TabIndex = 19;
-            this.drawsDown.ValueChanged += new System.EventHandler(this.TotalCalc_Click);
             // 
             // depthDown
             // 
@@ -172,7 +171,6 @@
             0,
             0,
             0});
-            this.depthDown.ValueChanged += new System.EventHandler(this.TotalCalc_Click);
             // 
             // widthDown
             // 
@@ -195,7 +193,6 @@
             0,
             0,
             0});
-            this.widthDown.ValueChanged += new System.EventHandler(this.TotalCalc_Click);
             // 
             // label7
             // 
