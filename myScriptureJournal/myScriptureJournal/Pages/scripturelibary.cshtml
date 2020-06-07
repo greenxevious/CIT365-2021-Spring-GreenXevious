@@ -1,0 +1,26 @@
+﻿@page
+@model myScriptureJournal.Pages.Index1Model
+@{
+}
+
+<h1>Scripture Libary </h1>
+
+
+<img src="" alt="" />
+<form method="post">
+    <input type="text" asp-for="list.book" placeholder="Book Reference" required/>
+    <br />
+    <input type="text" asp-for="list.chapter" placeholder="Chapter Reference" required/>
+    <br />
+    <input type="text" asp-for="list.section" placeholder="Section Reference" required/>
+    <br />
+    <input type="text" asp-for="list.notes" placeholder="Note Reference" />
+
+
+
+
+
+    <button type="submit">Submit</button>
+</form>
+
+
