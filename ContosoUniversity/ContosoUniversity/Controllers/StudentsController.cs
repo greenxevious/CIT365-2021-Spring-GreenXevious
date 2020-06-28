@@ -112,7 +112,7 @@ namespace ContosoUniversity.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(
-    [Bind("EnrollmentDate,FirstMidName,LastName")] Student student)
+         [Bind("EnrollmentDate,FirstMidName,LastName")] Student student)
         {
             try
             {
